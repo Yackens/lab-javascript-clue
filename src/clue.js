@@ -175,8 +175,7 @@ function pickMystery() {
 
 // ITERATION 3
 
-function revealMystery() {
-const envelope = `${pickMystery().suspect.firstName} ${pickMystery().suspect.lastName} killed Mr. Boddy using the ${pickMystery().weapon.name} in the ${pickMystery().room.name}!`;
-    return envelope;
+function revealMystery(envelope) {
+const final_phrase = `${envelope.suspect.firstName} ${envelope.suspect.lastName} killed Mr. Boddy using the ${envelope.weapon.name} in the ${envelope.room.name}!`;
+    return final_phrase;
 }
-console.log(revealMystery())
